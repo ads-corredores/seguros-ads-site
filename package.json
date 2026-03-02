@@ -1,0 +1,12 @@
+{
+  "name": "seguros-ads-site",
+  "version": "1.0.0",
+  "description": "Sitio Jekyll compatible con GitHub Pages y Cloudflare Pages",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve",
+    "deploy": "npm run build && npx wrangler pages deploy _site",
+    "pages:build": "bundle exec jekyll build",
+    "pages:deploy": "npx wrangler pages deploy _site"
+  }
+}
